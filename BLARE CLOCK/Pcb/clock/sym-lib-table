@@ -1,6 +1,0 @@
-(sym_lib_table
-  (version 7)
-  (lib (name "XIAO ESP32C3_v1.3-2026-09-16_084458")(type "EasyEDA (JLCEDA) Pro")(uri "C:/Users/vivaa/Downloads/XIAO_ESP32C3_v1.3_KiCad_260116/202003511_XIAO ESP32C3_v1.3_SCH&PCB_260116/XIAO ESP32C3_v1.3-backups/XIAO ESP32C3_v1.3-2026-09-16_084458.zip")(options "")(descr "")(disabled)(hidden))
-  (lib (name "XIAO_Series_SCH_Symbols")(type "EasyEDA (JLCEDA) Pro")(uri "C:/Users/vivaa/Downloads/XIAO_Series_SCH_Symbols.zip")(options "")(descr "")(disabled)(hidden))
-  (lib (name "Seeed_Studio_XIAO_Series")(type "KiCad")(uri "C:/Users/vivaa/Downloads/XIAO_Series_SCH_Symbols/Seeed_Studio_XIAO_Series.kicad_sym")(options "")(descr ""))
-)
