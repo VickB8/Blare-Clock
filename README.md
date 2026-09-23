@@ -71,7 +71,7 @@ PCB
 
 The PCB was designed in KiCad and contains the connections between the XIAO ESP32-C3 and the display.
 
-schematic
+Schematic
 
 ![image alt](https://github.com/VickB8/Blare-Clock/blob/main/BLARE%20CLOCK/Images/schematic.png?raw=true)
 
