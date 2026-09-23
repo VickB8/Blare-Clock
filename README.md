@@ -2,6 +2,8 @@
 
 A Small custom desk clock powered by a XIAO ESP32-C3 with a color display and Wi-Fi time sync.
 
+![image alt]()
+
 # Inspiration
 
 I wanted to make a small desk clock that was more interesting than a normal digital clock I decided to design the PCB, Case and firmware myself use an ESP32-C3 so the clock could connect to Wifi and automatically keep the synchronisation.
@@ -64,14 +66,18 @@ Color display
 
 PCB
 
-
+![image alt]()
 
 
 The PCB was designed in KiCad and contains the connections between the XIAO ESP32-C3 and the display.
 
+schematic
+
+![image alt]()
+
 Case
 
-
+![image alt]()
 
 
 The enclosure was designed to hold the electronics while leaving access for the display and USB port.
