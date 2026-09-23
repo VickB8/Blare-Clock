@@ -1,104 +1,88 @@
-# Blare-Clock
-This repository contains the design files, firmware, and documentation for a custom Wi-Fi synchronized desk clock built using the Seeed Studio XIAO ESP-C and an ST display. The project was created as part of the BLARE program and features automatic time synchronization via NTP, a custom display driver, and a 3D-printed case.
-# BLARE Clock
+# BLARE CLOCK
 
-A custom digital clock built using a **Seeed Studio XIAO ESP32-C3**, **ST7789 TFT display**, custom PCB, and a 3D-printed enclosure.
+A Small custom desk clock powered by a XIAO ESP32-C3 with a color display and Wi-Fi time sync.
 
-## Project Overview
+# Inspiration
 
-This project is a compact Wi-Fi-enabled digital clock. The ESP32-C3 connects to Wi-Fi and retrieves the current time using an NTP time server. The time and date are displayed on an ST7789 TFT screen.
+I wanted to make a small desk clock that was more interesting than a normal digital clock I decided to design the PCB, Case and firmware myself use an ESP32-C3 so the clock could connect to Wifi and automatically keep the synchronisation.
+I also wanted the final clock to look like an actual finished product instead of just a developement board connected to a display.
 
-## Features
+# How it Works
 
-* Wi-Fi connectivity
-* Automatic time synchronization using NTP
-* Digital time display
-* Date display
-* Custom PCB
-* Custom 3D-printed enclosure
-* ST7789 TFT display
-* Seeed Studio XIAO ESP32-C3
+The clock uses a Seeed Studio XIAO ESP32-C3 as the main microcontroller. When it starts up, it connects to Wi-Fi and gets the current time using NTP.
 
-## Hardware
+The time is then displayed on the display.
 
-| Component       | Description                |
-| --------------- | -------------------------- |
-| Microcontroller | Seeed Studio XIAO ESP32-C3 |
-| Display         | ST7789 284 × 76 TFT        |
-| PCB             | Custom-designed PCB        |
-| Enclosure       | Custom 3D-printed case     |
-| Firmware        | Arduino / ESP32            |
-| Connectivity    | Wi-Fi                      |
+The electronics are mounted inside a custom 3D-printed case that I designed specifically for the PCB and display.
+
+# Challenges
+
+One of the biggest challenges was getting the display and XIAO ESP32-C3 working together. I had to figure out the correct pins and how to control the display.
+
+I also had some problems with the KiCad libraries and footprints for the XIAO ESP32-C3. Getting the PCB and its 3D models to show correctly took some troubleshooting.
+
+Another challenge was designing the case. I originally made the display opening too small and didn't leave enough room for the display wires and USB connection. I had to go back and modify the case so the display could actually be connected and the USB port could be accessed.
+
+# What I Learned
+
+How to design a PCB in KiCad
+How to work with custom footprints and libraries
+How to use an ESP32-C3 with Wi-Fi
+How NTP time synchronization works
+How to design a 3D-printed enclosure around electronics
+How to troubleshoot PCB and 3D-model issues
+
+# Components 
+
+Seeed Studio XIAO ESP32-C3
+TFT display
+Custom PCB
+Connecting wires
+3D-printed enclosure
+MX style keyboard switches
+white blank dsa caps
+3.3v piezo buzzer
+M3x5x4 heat inserts M3x8mm screws
+
+# Software
+
+Arduino IDE
+ESP32 Arduino Core
+Adafruit GFX Library
+Adafruit ST7789 Library
+SPI
+WiFi
+Time / NTP
+
+# Features
+
+Wi-Fi time synchronization
+NTP-based accurate time
+Color display
+
+# Design Files
+
+PCB
 
 
-## Firmware
 
-The firmware is written using the Arduino IDE and runs on the XIAO ESP32-C3.
 
-The firmware:
+The PCB was designed in KiCad and contains the connections between the XIAO ESP32-C3 and the display.
 
-1. Initializes the ST7789 display.
-2. Connects to Wi-Fi.
-3. Synchronizes the clock using an NTP server.
-4. Retrieves the local date and time.
-5. Displays the time and date on the TFT.
+Case
 
-### Libraries
 
-* Adafruit GFX Library
-* Adafruit ST7735 and ST7789 Library
-* SPI
-* WiFi
-* ESP32 time functions
 
-## Bill of Materials
 
-| Component                   |                  Quantity |
-| --------------------------- | ------------------------: |
-| Seeed Studio XIAO ESP32-C3  |                         1 |
-| ST7789 284 × 76 TFT Display |                         1 |
-| Custom PCB                  |                         1 |
-| 3D-printed enclosure        |                         1 |
-| Other electronic components | As specified in schematic |
+The enclosure was designed to hold the electronics while leaving access for the display and USB port.
 
-## Project Structure
+Firmware
 
-```text
-BLARE-Clock/
-├── CAD/
-│   └── Clock.step
-│
-├── PCB/
-│   ├── clock.kicad_pro
-│   ├── clock.kicad_sch
-│   └── clock.kicad_pcb
-│
-├── Firmware/
-│   └── clock.ino
-│
-├── Production/
-│   ├── gerbers.zip
-│   ├── Top.step
-│   ├── Bottom.step
-│
-└── README.txt
-```
+The firmware is written in Arduino/C++ and handles Wi-Fi connection, NTP time synchronization, and drawing the clock interface on the display.
 
-## Tools Used
+Final Result
 
-* KiCad — schematic and PCB design
-* Arduino IDE — firmware development
-* Blender / CAD software — enclosure design
-* 3D printer — enclosure manufacturing
 
-## Credits
 
-This project was created as part of the **Hack Club BLARE** hardware project.
 
-Built with:
-
-* Seeed Studio XIAO ESP32-C3
-* ST7789 TFT
-* KiCad
-* Arduino
-* 3D printing
+This project helped me learn more about PCB design, embedded programming, displays, and designing physical enclosures for electronics. I started with the individual components and gradually worked toward making the complete clock.
