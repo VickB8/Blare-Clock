@@ -2,7 +2,7 @@
 
 A Small custom desk clock powered by a XIAO ESP32-C3 with a color display and Wi-Fi time sync.
 
-![image alt]()
+![image alt](https://github.com/VickB8/Blare-Clock/blob/main/BLARE%20CLOCK/Images/final%20output.png?raw=true)
 
 # Inspiration
 
@@ -66,18 +66,20 @@ Color display
 
 PCB
 
-![image alt]()
+![image alt](https://github.com/VickB8/Blare-Clock/blob/main/BLARE%20CLOCK/Images/pcb.png?raw=true)
 
 
 The PCB was designed in KiCad and contains the connections between the XIAO ESP32-C3 and the display.
 
 schematic
 
-![image alt]()
+![image alt](https://github.com/VickB8/Blare-Clock/blob/main/BLARE%20CLOCK/Images/schematic.png?raw=true)
 
 Case
 
-![image alt]()
+![image alt](https://github.com/VickB8/Blare-Clock/blob/main/BLARE%20CLOCK/Images/body%20view.png?raw=true)
+
+![image alt](https://github.com/VickB8/Blare-Clock/blob/main/BLARE%20CLOCK/Images/body%20with%20pcb.png?raw=true)
 
 
 The enclosure was designed to hold the electronics while leaving access for the display and USB port.
