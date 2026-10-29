@@ -1,7 +1,8 @@
-# BLARE CLOCK
+<img width="1398" height="1864" alt="image" src="https://github.com/user-attachments/assets/6c97bbf5-f2b9-44d9-a3f5-281549e7fbc1" /># BLARE CLOCK
 
 A Small custom desk clock powered by a XIAO ESP32-C3 with a color display and Wi-Fi time sync.
 
+![image alt]([https://github.com/VickB8/Blare-Clock/blob/main/BLARE%20CLOCK/Images/final%20output.png?raw=true](https://github.com/VickB8/Blare-Clock/blob/main/BLARE%20CLOCK/Images/20261029_163050.jpg?raw=true))
 ![image alt](https://github.com/VickB8/Blare-Clock/blob/main/BLARE%20CLOCK/Images/final%20output.png?raw=true)
 
 # Inspiration
